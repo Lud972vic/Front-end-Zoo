@@ -1,0 +1,7 @@
+.p_footerLink {
+  color: lightgrey;
+}
+
+.p_footerLink:hover {
+  color: white;
+}
