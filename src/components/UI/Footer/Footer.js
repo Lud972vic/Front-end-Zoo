@@ -8,7 +8,7 @@ import classes from "./Footer.module.css";
 const footer = (props) => (
     <>
         <div className="footerColor text-white text-center mt-2">
-            MyZoo - Tous droits réservés
+            MeauxZoo - Tous droits réservés
             <div className="row no-gutters align-items-center text-center pt-2 mt-4">
                 <div className="col-3">
                     <a href="#" className="d-block" target="_blank">
@@ -27,7 +27,7 @@ const footer = (props) => (
                 </div>
                 <div className="col-3">
                     <NavLink to="/lesMentionsLegales" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>Les mentions légales</NavLink>
-                    <a href="maito: e.ludovic@free.fr" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>contact@myzoo.com</a>
+                    <a href="https://github.com/Lud972vic" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}><i class="fab fa-github"></i> Lud972vic</a>
                 </div>
             </div>
         </div>

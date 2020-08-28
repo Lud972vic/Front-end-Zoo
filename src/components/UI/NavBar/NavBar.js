@@ -7,7 +7,7 @@ const navbar = (props) => (
     <>
         <nav className="navbar navbar-expand-lg navbar-light headerColor">
             <a className="navbar-brand" href="/">
-                <img src={logo} alt="logo du site Zoo" width="50px" className="rounded"></img>
+                <img src={logo} alt="logo du site Zoo" width="60px" className="rounded"></img>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -16,10 +16,13 @@ const navbar = (props) => (
             <div className="collapse navbar-collapse" id="navbarColor03">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <NavLink to="/" exact className="nav-link btn btn-outline-secondary mx-2">Accueil</NavLink>
+                        <NavLink to="/" exact className="nav-link btn btn-outline-secondary buttonNavBar m-1">Accueil</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" exact className="nav-link btn btn-outline-secondary mx-2">Contactez-nous</NavLink>
+                        <NavLink to="/animaux" exact className="nav-link btn btn-outline-secondary buttonNavBar m-1">Les animaux du parc</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact" exact className="nav-link btn btn-outline-secondary buttonNavBar m-1">Contactez-nous</NavLink>
                     </li>
                 </ul>
             </div>

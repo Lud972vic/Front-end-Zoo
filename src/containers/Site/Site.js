@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Accueil from '../Accueil/Accueil';
 import Error from '../../components/Error/Error';
 import Footer from '../../components/UI/Footer/Footer';
+import Parc from '../Parc/Parc';
 
 class Site extends Component {
     render() {
@@ -12,6 +13,7 @@ class Site extends Component {
                 <div className="site">
                     <NavBar />
                     <Switch>
+                        <Route path="/animaux" exact render={() => <Parc />} />
                         <Route path="/contact" exact render={() => <h1>Page de contact</h1>} />
                         <Route path="/" exact render={() => <Accueil />} />
                         <Route render={() => <Error type="404"></Error>} />
