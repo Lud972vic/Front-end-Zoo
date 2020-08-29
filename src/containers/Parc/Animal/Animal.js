@@ -4,9 +4,11 @@ import Bouton from "../../../components/UI/Button/Button";
 const composant = (props) => (
     <>
         <div className="card m-2">
-            <h3 className="card-header text-center">Qui suis-je ?  {props.nom}</h3>
+            <h3 className="card-header bandeauColor text-white text-center">Qui suis-je ?  {props.nom}</h3>
             <div className="card-body">
-                <div className="card-text">{props.description} </div>
+                <div className="card-text">
+                    {props.description.toLowerCase().includes('dangereux') ? <p className="text-danger"><i className="fas fa-exclamation-triangle"></i> {props.description}</p> : props.description}
+                </div>
             </div>
 
             <div className="text-center" style={{ "height": "100px" }} >
@@ -15,7 +17,7 @@ const composant = (props) => (
 
             <div className="card-body">
                 <h3>Je suis de la famille des&nbsp;
-                    <Bouton typeBtn="btn-outline-success"> {props.famille.libelleFamille.toLowerCase()}</Bouton>
+                    <Bouton typeBtn="btn-outline-success my-2" clic={() => props.filtreFamille(props.famille.idFamille)}> {props.famille.libelleFamille.toLowerCase()}</Bouton>
                     <p className="small text-muted">{props.famille.descriptionFamille}</p>
                 </h3>
             </div>
@@ -40,7 +42,13 @@ const composant = (props) => (
                             default: colorBtnContinent = "btn-outline-secondary";
                         }
 
-                        return <Bouton typeBtn={colorBtnContinent} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
+                        return <Bouton
+                            typeBtn={colorBtnContinent}
+                            css="m-1"
+                            key={continent.idContinent}
+                            clic={() => props.filtreContinent(continent.idContinent)}
+
+                        >{continent.libelleContinent}</Bouton>
                     })
                 }
             </div>

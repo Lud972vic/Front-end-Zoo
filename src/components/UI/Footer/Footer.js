@@ -27,7 +27,7 @@ const footer = (props) => (
                 </div>
                 <div className="col-3">
                     <NavLink to="/lesMentionsLegales" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>Les mentions légales</NavLink>
-                    <a href="https://github.com/Lud972vic" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}><i class="fab fa-github"></i> Lud972vic</a>
+                    <a href="https://github.com/Lud972vic" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}><i className="fab fa-github"></i> Lud972vic</a>
                 </div>
             </div>
         </div>
