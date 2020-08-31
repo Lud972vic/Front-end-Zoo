@@ -1,4 +1,4 @@
-# Projet Zoo en REACT (En cours de DEV)
+# Projet Zoo en REACT
 
 ![Capture1](https://user-images.githubusercontent.com/52196263/91643849-21d61300-ea37-11ea-9f34-2dfc124bfdcf.PNG)
 
