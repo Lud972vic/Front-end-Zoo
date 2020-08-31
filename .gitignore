@@ -24,3 +24,5 @@ yarn-error.log*
 
 /src/assets/*
 /_divers_/*
+/public/css/*
+/public/js/*
